@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Infinity Hyperlinks</title>
+
+        <script src="https://kit.fontawesome.com/a98dc1abec.js" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="Images/my profile pic.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+
+        body{
+            background-color: white;
+        }
+
+        h1{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        h2{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button{
+            display: block;
+            width: 450px;
+            height: 50px;
+            margin: 15px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            transition: 0.25s;
+        }
+
+        button:hover{
+            width: 460px;
+            height: 55px;
+            background-color: transparent;
+            border: solid 3px black;
+            color: black;
+            box-shadow: 2px, 2px, 10px, black;
+        }
+
+        button:active{
+            width: 460px;
+            height: 55px;
+            background-color: transparent;
+            border: solid 3px black;
+            color: black;
+            box-shadow: 2px, 2px, 10px, black;
+            opacity: 0.5;
+        }
+
+        .fiverr-button{
+            animation: button-shake 0.5s linear infinite;
+        }
+
+        .social-media{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a{
+            color: black;
+            text-align: center;
+            display: inline-block;
+            font-size: 50px;
+            margin: 10px;
+            transition: 0.25s;
+        }
+
+        a:hover{
+            font-size: 40px;
+        }
+
+        a:active{
+            font-size: 40px;
+            color: gray;
+        }
+
+        @keyframes button-shake{
+            from{
+                transform:rotate(-2deg);
+            }
+
+            50%{
+                transform: rotate(2deg);
+                color: lightgreen;
+                border-color: lightgreen;
+            }
+
+            to{
+                transform: rotate(-2deg);
+            }
+        }
+
+    </style>
+
+    <body>
+
+        <script>
+            function openLink(target){
+                location.href = target.value;
+            }
+        </script>
+
+        <div class="header">
+            <img src = "Images/my profile pic(Round).png" width="200px" height="200px" alt="Infinity Logo">
+            <h1>Infinity</h1>
+            <h2>Just a small game dev ;)</h2>
+        </div>
+
+        <div class="social-media">
+              <a class="social-button" href="https://www.instagram.com/charged_infinity101/"><i class="fa-brands fa-instagram"></i></a>  
+              <a class="social-button" href="https://www.youtube.com/@Charged_Infinity/featured"><i class="fa-brands fa-youtube"></i></a>  
+              <a class="social-button" href="https://www.tiktok.com/@charged_infinity101"><i class="fa-brands fa-tiktok"></i></a>  
+        </div>
+
+        <div class="links">
+            <button class="fiverr-button" onclick="openLink(this)" value="https://www.fiverr.com/chargedinfinity/develop-a-game-with-unity-c-sharp"><i class="fa-solid fa-gamepad"></i> Fiverr Gig</button>
+            <button onclick="openLink(this)" value="https://chargedinfinity101.github.io/Infinity-Website/"><i class="fa-solid fa-globe"></i> My Website</button>
+        </div>
+
+    </body>
+</html>
